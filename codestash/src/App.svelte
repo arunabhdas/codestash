@@ -1,5 +1,12 @@
 <script>
 	export let name;
+
+	let rando;
+
+	function setRando() {
+		rando = Math.random()
+	}
+
 </script>
 
 <style>
@@ -8,4 +15,6 @@
 	}
 </style>
 
-<h1>Hello {name}!</h1>
+<h1>Welcome to {name}!</h1>
+<p>The random number is { rando }</p>
+<button on:click={setRando}>Randomize</button>
